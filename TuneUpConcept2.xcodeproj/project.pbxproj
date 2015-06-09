@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		A53BFF271A5D812200863CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF261A5D812200863CBF /* AppDelegate.swift */; };
 		A53BFF2A1A5D812300863CBF /* TuneUpConcept2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF281A5D812300863CBF /* TuneUpConcept2.xcdatamodeld */; };
-		A53BFF2C1A5D812300863CBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF2B1A5D812300863CBF /* ViewController.swift */; };
 		A53BFF2F1A5D812300863CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53BFF2D1A5D812300863CBF /* Main.storyboard */; };
 		A53BFF311A5D812300863CBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53BFF301A5D812300863CBF /* Images.xcassets */; };
 		A53BFF341A5D812300863CBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53BFF321A5D812300863CBF /* LaunchScreen.xib */; };
 		A53BFF401A5D812300863CBF /* TuneUpConcept2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF3F1A5D812300863CBF /* TuneUpConcept2Tests.swift */; };
+		A53BFF521A5D895D00863CBF /* PlaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF511A5D895D00863CBF /* PlaysViewController.swift */; };
+		A53BFF541A5D897800863CBF /* SongItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF531A5D897800863CBF /* SongItem.swift */; };
+		A53BFF561A5D89AE00863CBF /* SkipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BFF551A5D89AE00863CBF /* SkipsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		A53BFF251A5D812200863CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A53BFF261A5D812200863CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A53BFF291A5D812300863CBF /* TuneUpConcept2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TuneUpConcept2.xcdatamodel; sourceTree = "<group>"; };
-		A53BFF2B1A5D812300863CBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A53BFF2E1A5D812300863CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A53BFF301A5D812300863CBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A53BFF331A5D812300863CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A53BFF391A5D812300863CBF /* TuneUpConcept2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneUpConcept2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53BFF3E1A5D812300863CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A53BFF3F1A5D812300863CBF /* TuneUpConcept2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneUpConcept2Tests.swift; sourceTree = "<group>"; };
+		A53BFF511A5D895D00863CBF /* PlaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaysViewController.swift; sourceTree = "<group>"; };
+		A53BFF531A5D897800863CBF /* SongItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongItem.swift; sourceTree = "<group>"; };
+		A53BFF551A5D89AE00863CBF /* SkipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				A53BFF261A5D812200863CBF /* AppDelegate.swift */,
-				A53BFF2B1A5D812300863CBF /* ViewController.swift */,
 				A53BFF2D1A5D812300863CBF /* Main.storyboard */,
+				A53BFF511A5D895D00863CBF /* PlaysViewController.swift */,
+				A53BFF551A5D89AE00863CBF /* SkipsViewController.swift */,
 				A53BFF301A5D812300863CBF /* Images.xcassets */,
 				A53BFF321A5D812300863CBF /* LaunchScreen.xib */,
+				A53BFF531A5D897800863CBF /* SongItem.swift */,
 				A53BFF281A5D812300863CBF /* TuneUpConcept2.xcdatamodeld */,
 				A53BFF241A5D812200863CBF /* Supporting Files */,
 			);
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53BFF2C1A5D812300863CBF /* ViewController.swift in Sources */,
 				A53BFF2A1A5D812300863CBF /* TuneUpConcept2.xcdatamodeld in Sources */,
+				A53BFF521A5D895D00863CBF /* PlaysViewController.swift in Sources */,
 				A53BFF271A5D812200863CBF /* AppDelegate.swift in Sources */,
+				A53BFF541A5D897800863CBF /* SongItem.swift in Sources */,
+				A53BFF561A5D89AE00863CBF /* SkipsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				A53BFF451A5D812300863CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A53BFF461A5D812300863CBF /* Build configuration list for PBXNativeTarget "TuneUpConcept2Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				A53BFF481A5D812300863CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
